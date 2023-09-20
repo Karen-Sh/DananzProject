@@ -1,0 +1,50 @@
+<section class="section1">
+    <div class="section1-container">
+        <h1 class="section1-container-title">
+            Our Teams
+        </h1>
+        <p class="section1-container-text">
+            It is a long established fact 
+            that a reader will be distracted 
+            by the readable content of a page 
+            when looking at its layout.
+        </p>
+        <img class="section1-container-img" src="assets/img/unsplash_LjqARJaJotc.png" alt="photo">
+    </div>
+</section>
+<section class="section2">
+    <div class="section2-container">
+        <div class="section2-container-block1">
+            <p class="section2-container-block1-text">
+                Designer
+            </p>
+            <div class="section2-container-block1-line"></div>
+        </div>
+        <h2 class="section2-container-title">
+            Creative Person
+        </h2>
+        <p class="section2-container-text">
+            Customize your interior design 
+            into a dream place with the best 
+            designers and quality furniture. 
+            We try our best to fulfill your 
+            expectations.
+        </p>
+        <div class="flex">
+            <div class="section2-container-block2" *ngFor="let item of img">
+                <div class="section2-container-block2-image">
+                    <img class="img" src="{{item}}" alt="photo">
+                    <div  class="section2-container-block2-image-bcg">
+                        <h4 class="section2-container-block2-image-title">
+                            Shoo Phar Dhie
+                        </h4>
+                        <p  class="section2-container-block2-image-text">
+                            CEO
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-why-choose-us></app-why-choose-us>

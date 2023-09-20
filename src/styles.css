@@ -1,0 +1,26 @@
+@import url(assets/fonts/Poppins/stylesheet.css);
+
+:root{
+    --primary-blue-100: #2C3878; 
+    --primary-blue-90:  #566093;
+    --primary-blue-75:  #8088AE;
+    --primary-blue-50:  #ABAFC9;
+    --primary-blue-25:  #D5D7E4;
+    --primary-blue-10:  #EAEBF2;
+    --grayscale-black:      #000;
+    --grayscale-70:      #141414;
+    --grayscale-50:         #333;
+    --grayscale-30:      #3C3C3C;
+    --grayscale-10:      #9C9C9C;
+    --grayscale-lightray:#D9D9D9;
+    --grayscale-white:      #FFF;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}

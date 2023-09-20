@@ -1,0 +1,197 @@
+.section1{
+    padding: 57px 0 100px;
+    background-color: var(--grayscale-white);
+}
+.section1-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.section1-container-title{
+    color: var(--grayscale-black);
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 78.4px */
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section1-container-text{
+    color: var(--grayscale-black, #000);
+    text-align: center;
+    margin: 0 auto 53px;
+    max-width: 518px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+}
+.section1-container-img{
+    width: 100%;
+}
+
+.section2{
+    background-color: var(--grayscale-white);
+    padding-bottom: 81px;
+}
+.section2-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.section2-container-block1{
+    margin-bottom: 40px;
+}
+.section2-container-block1-title{
+    color: var(--grayscale-50);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */  
+    margin-bottom: 24px; 
+    text-align: center;  
+}
+.section2-container-block1-text{
+    color: var(--grayscale-10);
+    /* width: 584px; */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */  
+    margin-bottom: 60px;  
+    text-align: center; 
+}
+.section2-container-block1-texts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section2-container-block1-texts1{
+    color: var(--grayscale-10);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */   
+}
+.p2{
+    margin-left: 20px;
+}
+.section2-container-block1-text1{
+    color: var(--grayscale-10);
+    /* width: 584px; */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */  
+    margin-bottom: 60px;  
+    text-align: center;    
+}
+.p1{
+    margin-bottom: 30px;
+}
+
+
+.section3{
+    background-color: var(--grayscale-white);
+    padding-bottom: 89px;
+}
+.section3-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3-container-img{
+    width: 100%;
+    display: block;
+    margin: 32px 0;
+}
+.flex1{
+    width: 48%;
+}
+
+
+
+
+@media screen and (min-width: 540px) {
+    .section1-container-title{
+        font-size: 56px;
+    }
+    .section2-container-block1-texts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .p2{
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .section2-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section2-container-block1{
+        margin-bottom: 0;
+    }
+    .section2-container-block1-title{
+        text-align: left;  
+    }
+    .section2-container-block1-text{
+        width: 354px;
+        text-align: left; 
+    }
+    .section2-container-block1-text1{
+        width: 300px; 
+        text-align: left;    
+    }
+}
+@media screen and (min-width: 992px) {
+    .section2-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section2-container-block1-text{
+        width: 354px;
+
+    }
+    .section2-container-block1-text1{
+        width: 500px; 
+ 
+    }
+}
+@media screen and (min-width: 1240px) {
+    .section1-container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .section2-container{
+        width: 1200px;
+    }
+    .section2-container-block1-text{
+        width: 559px;
+
+    }
+    .section2-container-block1-text1{
+        width: 584px; 
+ 
+    }
+    .section3-container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .flex1{
+        width: 584px;
+    }
+}

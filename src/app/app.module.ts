@@ -15,43 +15,56 @@ import { PortofoliosComponent } from './pages/portofolios/portofolios.component'
 import { PortofoliosDetailsComponent } from './pages/portofolios-details/portofolios-details.component';
 import { Route ,RouterModule } from '@angular/router';
 import { NotPageComponent } from './pages/not-page/not-page.component';
+import { config } from 'rxjs';
+import { LayoutComponent } from './layout/layout.component';
 
 
 let routes:Route[]=[
   {
-    path:'',
-    component: HomeComponent,
-    title: 'Home'
-  },
-  {
-    path:'about-us',
-    component: AboutUsComponent,
-    title: 'About Us'
-  },
-  {
-    path:'services',
-    component: ServicesComponent,
-    title: 'Services'
-  },
-  {
-    path:'out-teams',
-    component: OurTeamsComponent,
-    title: 'Our Teams'
-  },
-  {
-    path:'contact-us',
-    component: ContactUsComponent,
-    title: 'Contact Us'
-  },
-  {
-    path:'portofolios',
-    component: PortofoliosComponent,
-    title: 'Portofolios Component'
-  },
-  {
-    path:'portofolios-details',
-    component: PortofoliosDetailsComponent,
-    title: 'Portofolios Details'
+    path: '',
+    component:LayoutComponent,
+    children:[
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: "full"
+      },
+      {
+        path:'home',
+        component: HomeComponent,
+        title: 'Home'
+      },
+      {
+        path:'about-us',
+        component: AboutUsComponent,
+        title: 'About Us'
+      },
+      {
+        path:'services',
+        component: ServicesComponent,
+        title: 'Services'
+      },
+      {
+        path:'out-teams',
+        component: OurTeamsComponent,
+        title: 'Our Teams'
+      },
+      {
+        path:'contact-us',
+        component: ContactUsComponent,
+        title: 'Contact Us'
+      },
+      {
+        path:'portofolios',
+        component: PortofoliosComponent,
+        title: 'Portofolios Component'
+      },
+      {
+        path:'portofolios-details',
+        component: PortofoliosDetailsComponent,
+        title: 'Portofolios Details'
+      },
+    ]
   },
   {
     path:'**',
@@ -73,11 +86,12 @@ let routes:Route[]=[
     ContactUsComponent,
     PortofoliosComponent,
     PortofoliosDetailsComponent,
-    NotPageComponent
+    NotPageComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'})
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -92,6 +92,8 @@
 .footer-block2-container-block1-inp{
     border: none;
     padding: 5.5px 0px;
+    outline: none;
+    width: 350px;
 }
 ::placeholder{
     color: var(--grayscale-lightray);

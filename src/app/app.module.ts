@@ -15,8 +15,9 @@ import { PortofoliosComponent } from './pages/portofolios/portofolios.component'
 import { PortofoliosDetailsComponent } from './pages/portofolios-details/portofolios-details.component';
 import { Route ,RouterModule } from '@angular/router';
 import { NotPageComponent } from './pages/not-page/not-page.component';
-import { config } from 'rxjs';
 import { LayoutComponent } from './layout/layout.component';
+import { CreativePersonComponent } from './pages/creative-person/creative-person.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 let routes:Route[]=[
@@ -87,11 +88,13 @@ let routes:Route[]=[
     PortofoliosComponent,
     PortofoliosDetailsComponent,
     NotPageComponent,
-    LayoutComponent
+    LayoutComponent,
+    CreativePersonComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'})
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'}),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

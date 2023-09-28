@@ -31,18 +31,8 @@
             expectations.
         </p>
         <div class="flex">
-            <div class="section2-container-block2" *ngFor="let item of img">
-                <div class="section2-container-block2-image">
-                    <img class="img" src="{{item}}" alt="photo">
-                    <div  class="section2-container-block2-image-bcg">
-                        <h4 class="section2-container-block2-image-title">
-                            Shoo Phar Dhie
-                        </h4>
-                        <p  class="section2-container-block2-image-text">
-                            CEO
-                        </p>
-                    </div>
-                </div>
+            <div *ngFor="let item of person">
+                <app-creative-person [person]="item"></app-creative-person>
             </div>
         </div>
     </div>

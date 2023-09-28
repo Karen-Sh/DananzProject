@@ -13,30 +13,30 @@
 
 <section class="section2">
     <div class="section2-container">
-        <form class="forms">
+        <form class="forms" [formGroup]="form">
             <div class="flex">
                 <label>
                     <span>First Name</span>
-                    <input type="text" class="input-f_name" placeholder="First Name" name="f_name">
+                    <input type="text" class="input-f_name" formControlName="f_name" placeholder="First Name" name="f_name">
                 </label>
                 <label>
                     <span>Last Name</span>
-                    <input type="text" class="input-f_name" placeholder="Last Name" name="l_name">
+                    <input type="text" class="input-f_name" formControlName="l_name" placeholder="Last Name" name="l_name">
                 </label>
             </div>
             <label>
                 <span>Email</span>
-                <input type="email" placeholder="Email" name="e_mail">
+                <input type="email" formControlName="e_mail" placeholder="Email" name="e_mail">
             </label>
             <label>
                 <span>Phone Number</span>
-                <input type="tel" placeholder="Phone Number" name="p_number">
+                <input type="tel" formControlName="p_number" placeholder="Phone Number" name="p_number">
             </label>
             <label class="textarea"> 
                 <span>Message</span>
-                <textarea name="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="text" formControlName="text" cols="30" rows="10" placeholder="Your Message"></textarea>
             </label>
-            <button class="section2-container-button">Send Massage</button>
+            <button class="section2-container-button" [disabled]="form.invalid">Send Massage</button>
         </form>
     </div>
 </section>

@@ -1,0 +1,108 @@
+.section2-container-block2{
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.section2-container-block2-image{
+    background-color: var(--primary-blue-100);
+    position: relative;
+}
+.section2-container-block2-image-bcg{
+    top: 293px;
+    right: 21px;
+    left: 18px;
+    bottom: 18px;
+    background-color: var(--grayscale-white);
+    padding: 18px 0px 22px 16px;
+    position: absolute;
+    width: 238px;
+    margin: auto;
+}
+.section2-container-block2-image-title{
+    color: var(--grayscale-50, #333);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */    
+}
+.section2-container-block2-image-text{
+    color: var(--grayscale-10, #9C9C9C);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}
+.img{
+    width: 282px;
+    height: 400px;
+}
+
+@media screen and (min-width: 540px) {
+    .section2-container-block2-image-bcg{
+         top: 243px;
+         right: 21px;
+         left: 18px;
+         bottom: 14px;
+         background-color: var(--grayscale-white);
+         padding: 18px 0px 22px 0px;
+         position: absolute;
+         width: 196px;
+         margin: 0 auto;
+    }
+    .img{
+         width: 224px;
+         height: 328px;
+     }
+     .section2-container-block2{
+         margin-bottom: 30px;
+         width: 235px;
+         text-align: center;
+     }
+ }
+ @media screen and (min-width: 768px) {
+     .section2-container-title{
+         text-align: left;
+     }
+     .section2-container-text{
+         text-align: left;
+         width: 471px;
+     }
+     .section2-container-block1-line{
+         width: 507px;
+     }
+     .section2-container-block2{
+         margin-bottom: 30px;
+         width: 282px;
+         text-align: center;
+     }
+     .section2-container-block2-image-bcg{
+         width: 244px;
+         margin: auto;
+     }
+ }
+ @media screen and (min-width: 1240px) {
+     .section2-container-block2{
+         margin-bottom: 30px;
+         width: 282px;
+         text-align: center;
+     }
+     .section2-container-block2-image-bcg{
+         top: 233px;
+         right: 21px;
+         left: 18px;
+         bottom: 14px;
+         background-color: var(--grayscale-white);
+         padding: 17px 14px 14px 19px;
+         position: absolute;
+         width: 241px;
+         margin: 0 auto;
+        }
+     .section2-container-block2-image-title{
+         text-align: left;    
+     }
+     .section2-container-block2-image-text{
+        text-align: left;
+     }
+ }

@@ -93,7 +93,7 @@
     border: none;
     padding: 5.5px 0px;
     outline: none;
-    width: 350px;
+    width: 250px;
 }
 ::placeholder{
     color: var(--grayscale-lightray);
@@ -251,5 +251,8 @@
         margin-left: 170px;
         text-align: left;
         width: 230px;
+    }
+    .footer-block2-container-block1-inp{
+        width: 350px;
     }
 }

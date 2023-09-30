@@ -93,7 +93,7 @@ let routes:Route[]=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'}),
+    RouterModule.forRoot(routes),
     ReactiveFormsModule
   ],
   providers: [],

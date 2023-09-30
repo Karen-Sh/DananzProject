@@ -13,28 +13,58 @@
 
 <section class="section2">
     <div class="section2-container">
-        <form class="forms" [formGroup]="form">
+        <form class="forms" [formGroup]="form" (ngSubmit)="save()">
             <div class="flex">
                 <label>
                     <span>First Name</span>
                     <input type="text" class="input-f_name" formControlName="f_name" placeholder="First Name" name="f_name">
+                    <span class="span" *ngIf="form.get('f_name')?.hasError('required')&&(form.get('f_name')?.touched || form.get('f_name')?.dirty)">
+                        First Name is required!
+                    </span>
+                    <span class="span" *ngIf="form.get('f_name')?.hasError('minlength')&&(form.get('f_name')?.touched || form.get('f_name')?.dirty)">
+                        First Name is minlength 3 symbol!
+                    </span>
                 </label>
                 <label>
                     <span>Last Name</span>
                     <input type="text" class="input-f_name" formControlName="l_name" placeholder="Last Name" name="l_name">
+                    <span class="span" *ngIf="form.get('l_name')?.hasError('required')&&(form.get('l_name')?.touched || form.get('l_name')?.dirty)">
+                        Last Name is required!
+                    </span>
+                    <span class="span" *ngIf="form.get('l_name')?.hasError('minlength')&&(form.get('l_name')?.touched || form.get('l_name')?.dirty)">
+                        Last Name is minlength 3 symbol!
+                    </span>
                 </label>
             </div>
             <label>
                 <span>Email</span>
                 <input type="email" formControlName="e_mail" placeholder="Email" name="e_mail">
+                <span class="span" *ngIf="form.get('e_mail')?.hasError('required')&&(form.get('e_mail')?.touched || form.get('e_mail')?.dirty)">
+                    Email is required!
+                </span>
+                <span class="span" *ngIf="form.get('e_mail')?.hasError('pattern')&&(form.get('e_mail')?.touched || form.get('e_mail')?.dirty)">
+                    Email is "text@mail.com"!
+                </span>
             </label>
             <label>
                 <span>Phone Number</span>
                 <input type="tel" formControlName="p_number" placeholder="Phone Number" name="p_number">
+                <span class="span" *ngIf="form.get('p_number')?.hasError('required')&&(form.get('p_number')?.touched || form.get('p_number')?.dirty)">
+                    Phone Number is required!
+                </span>
+                <span class="span" *ngIf="form.get('p_number')?.hasError('pattern')&&(form.get('p_number')?.touched || form.get('p_number')?.dirty)">
+                    Phone Number is "+37495456789"!
+                </span>
             </label>
             <label class="textarea"> 
                 <span>Message</span>
-                <textarea name="text" formControlName="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea  formControlName="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <span class="span" *ngIf="form.get('text')?.hasError('required')&&(form.get('text')?.touched || form.get('text')?.dirty)">
+                    Message is required!
+                </span>
+                <span class="span" *ngIf="form.get('text')?.hasError('minlength')&&(form.get('text')?.touched || form.get('text')?.dirty)">
+                    Message is minlength 3 symbol!
+                </span>
             </label>
             <button class="section2-container-button" [disabled]="form.invalid">Send Massage</button>
         </form>

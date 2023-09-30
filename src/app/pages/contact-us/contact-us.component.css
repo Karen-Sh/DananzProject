@@ -176,10 +176,32 @@ span{
     line-height: 160%; /* 28.8px */
     text-align: center;
 }
-
-
-
-
+.span{
+    color: red;
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-style: italic;    
+}
+input{
+    outline: none;
+}
+input.ng-dirty.ng-invalid {
+    border: 3px solid red;
+}
+input.ng-dirty.ng-valid {
+    border: 3px solid green;
+}
+textarea.ng-dirty.ng-invalid {
+    border: 3px solid red;
+}
+textarea.ng-dirty.ng-valid {
+    border: 3px solid green;
+}
+textarea{
+    outline: none;
+}
 
 
 

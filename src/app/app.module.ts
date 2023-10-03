@@ -76,25 +76,10 @@ let routes:Route[]=[
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    PtoductComponent,
-    FooterComponent,
-    AboutUsComponent,
-    WhyChooseUsComponent,
-    ServicesComponent,
-    OurTeamsComponent,
-    ContactUsComponent,
-    PortofoliosComponent,
-    PortofoliosDetailsComponent,
-    NotPageComponent,
-    LayoutComponent,
-    CreativePersonComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

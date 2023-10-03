@@ -16,41 +16,8 @@
             to fulfill your expectations.
         </p>
         <div class="section-container-block">
-            <div class="section-container-block-block1">
-                <div class="section-container-block-circle"></div>
-                <h4 class="section-container-block-title">
-                    High Quality
-                </h4>
-                <p class="section-container-block-text">
-                    Customize your interior design into 
-                    a dream place with the best designers 
-                    and quality furniture. We try our best 
-                    to fulfill your expectations.
-                </p>
-            </div>
-            <div class="section-container-block-block1">
-                <div class="section-container-block-circle"></div>
-                <h4 class="section-container-block-title">
-                    Professional Designer
-                </h4>
-                <p class="section-container-block-text">
-                    Customize your interior design into 
-                    a dream place with the best designers 
-                    and quality furniture. We try our best 
-                    to fulfill your expectations.
-                </p>
-            </div>
-            <div class="section-container-block-block1">
-                <div class="section-container-block-circle"></div>
-                <h4 class="section-container-block-title">
-                    The Best Services
-                </h4>
-                <p class="section-container-block-text">
-                    Customize your interior design into 
-                    a dream place with the best designers 
-                    and quality furniture. We try our best 
-                    to fulfill your expectations.
-                </p>
+            <div *ngFor="let val of choose">
+                <app-choose [items]="val"></app-choose>
             </div>
         </div>
     </div>

@@ -18,6 +18,7 @@ import { NotPageComponent } from './pages/not-page/not-page.component';
 import { LayoutComponent } from './layout/layout.component';
 import { CreativePersonComponent } from './pages/creative-person/creative-person.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ChooseComponent } from './pages/why-choose-us/choose/choose.component';
 
 
 let routes:Route[]=[

@@ -18,85 +18,8 @@
                 want, you can customize it as you want.
             </p>
         </div>
-        <div class="section-container-block2 mrg-bot">
-            <div class="section-container-block2-block1">
-                <div class="section-container-block2-texts">
-                    <p class="section-container-block2-text">
-                        01
-                    </p>
-                    <p class="section-container-block2-text mrg">
-                        Vintage
-                    </p>
-                </div>
-                <a routerLink="/portofolios">
-                    <img src="assets/img/arrow-right (3).png" alt="photo">
-                </a>
-            </div>
-            <p class="section-container-block2-text1">
-                the use of simple and limited 
-                elements to get the best effect
-                or impression.
-            </p>
-        </div>
-        <div class="section-container-block2 mrg-bot">
-            <div class="section-container-block2-block1">
-                <div class="section-container-block2-texts">
-                    <p class="section-container-block2-text">
-                        02
-                    </p>
-                    <p class="section-container-block2-text mrg">
-                        Minimalist
-                    </p>
-                </div>
-                <a routerLink="/portofolios">
-                    <img src="assets/img/arrow-right (3).png" alt="photo">
-                </a>
-            </div>
-            <p class="section-container-block2-text1">
-                the use of simple and limited 
-                elements to get the best effect
-                or impression.
-            </p>
-        </div>
-        <div class="section-container-block2 mrg-bot">
-            <div class="section-container-block2-block1">
-                <div class="section-container-block2-texts">
-                    <p class="section-container-block2-text">
-                        03
-                    </p>
-                    <p class="section-container-block2-text mrg">
-                        Modern
-                    </p>
-                </div>
-                <a  routerLink="/portofolios">
-                    <img src="assets/img/arrow-right (3).png" alt="photo">
-                </a>
-            </div>
-            <p class="section-container-block2-text1">
-                the use of simple and limited 
-                elements to get the best effect
-                or impression.
-            </p>
-        </div>
-        <div class="section-container-block2">
-            <div class="section-container-block2-block1">
-                <div class="section-container-block2-texts">
-                    <p class="section-container-block2-text">
-                        03
-                    </p>
-                    <p class="section-container-block2-text mrg">
-                        transitional
-                    </p>
-                </div>
-                <a   routerLink="/portofolios">
-                    <img src="assets/img/arrow-right (3).png" alt="photo">
-                </a>
-            </div>
-            <p class="section-container-block2-text1">
-                the use of simple and limited 
-                elements to get the best effect
-                or impression.
-            </p>
+        <div *ngFor="let item of link">
+            <app-link [link]="item"></app-link>
         </div>
     </div>
 </section>

@@ -19,47 +19,8 @@
             </p>
             <div class="section2-container-block1-line"></div>
         </div>
-        <div class="section2-container-block2">
-            <img class="section2-container-block2-img" src="assets/img/unsplash_mx4mSkK9zeo.png" alt="photo">
-            <div class="section2-container-block2-texts">
-                <h3 class="section2-container-block2-title">
-                    Interior design
-                </h3>
-                <p class="section2-container-block2-text">
-                    Customize your interior design into a
-                    dream place with the best designers and
-                    quality furniture. We try our best to
-                    fulfill your expectations.
-                </p>
-            </div>
-        </div>
-        <div class="section2-container-block2">
-            <img class="section2-container-block2-img" src="assets/img/unsplash_7okkFhxrxNw.png" alt="photo">
-            <div class="section2-container-block2-texts">
-                <h3 class="section2-container-block2-title">
-                    Consultant
-                </h3>
-                <p class="section2-container-block2-text">
-                    Customize your interior design into a
-                    dream place with the best designers and
-                    quality furniture. We try our best to
-                    fulfill your expectations.
-                </p>
-            </div>
-        </div>
-        <div class="section2-container-block2">
-            <img class="section2-container-block2-img" src="assets/img/unsplash_wD1LRb9OeEo.png" alt="photo">
-            <div class="section2-container-block2-texts">
-                <h3 class="section2-container-block2-title">
-                    construction consultant
-                </h3>
-                <p class="section2-container-block2-text">
-                    Customize your interior design into a
-                    dream place with the best designers and
-                    quality furniture. We try our best to
-                    fulfill your expectations.
-                </p>
-            </div>
+        <div *ngFor="let value of achiev">
+            <app-achievement [item]="value"></app-achievement>
         </div>
     </div>
 </section>

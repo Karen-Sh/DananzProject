@@ -19,6 +19,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { CreativePersonComponent } from './pages/creative-person/creative-person.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ChooseComponent } from './pages/why-choose-us/choose/choose.component';
+import { AchievementComponent } from './pages/services/achievement/achievement.component';
+import { LinkComponent } from './pages/home/ptoduct/link/link.component';
 
 
 let routes:Route[]=[

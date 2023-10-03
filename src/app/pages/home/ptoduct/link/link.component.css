@@ -1,0 +1,113 @@
+.section-container-block2-block1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section-container-block2-texts{
+    display: flex;
+}
+.section-container-block2-text{
+    color: var(--grayscale-50);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 44.8px */    
+}
+.mrg{
+    margin-left: 40px; /*87px*/
+}
+.section-container-block2-text1{
+    color: var(--grayscale-50);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */   
+    margin-left: 40px; 
+}
+.mrg-bot{
+    margin-bottom: 43px;
+}
+
+
+@media screen and (min-width: 540px) {
+    .section-container-block2-block1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .section-container-block2-texts{
+        display: flex;
+    }
+    .section-container-block2-text{
+        color: var(--grayscale-50, #333);
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 44.8px */    
+    }
+    .mrg{
+        margin-left: 40px; /*87px*/
+    }
+    .section-container-block2-text1{
+        margin-left: 80px;
+        max-width: 469px; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-container-block2-block1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .section-container-block2-texts{
+        display: flex;
+    }
+    .section-container-block2-text{
+        color: var(--grayscale-50, #333);
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 44.8px */    
+    }
+    .mrg{
+        margin-left: 40px; /*87px*/
+    }
+    .section-container-block2-text1{
+        margin-left: 80px;
+        max-width: 469px; 
+    }
+}
+@media screen and (min-width: 992px) {
+    .section-container-block2-block1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .section-container-block2-texts{
+        display: flex;
+    }
+    .section-container-block2-text{
+        color: var(--grayscale-50, #333);
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 44.8px */    
+    }
+    .mrg{
+        margin-left: 40px; /*87px*/
+    }
+    .section-container-block2-text1{
+        margin-left: 80px;
+        max-width: 469px; 
+    }
+}

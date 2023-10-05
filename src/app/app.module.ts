@@ -2,31 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './headet-footer/header/header.component';
-import { HomeComponent } from './pages/home/home.component';
-import { PtoductComponent } from './pages/home/ptoduct/ptoduct.component';
-import { FooterComponent } from './headet-footer/footer/footer.component';
-import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { WhyChooseUsComponent } from './pages/why-choose-us/why-choose-us.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { OurTeamsComponent } from './pages/our-teams/our-teams.component';
-import { ContactUsComponent } from './pages/contact-us/contact-us.component';
-import { PortofoliosComponent } from './pages/portofolios/portofolios.component';
-import { PortofoliosDetailsComponent } from './pages/portofolios-details/portofolios-details.component';
 import { Route ,RouterModule } from '@angular/router';
-import { NotPageComponent } from './pages/not-page/not-page.component';
-import { LayoutComponent } from './layout/layout.component';
-import { CreativePersonComponent } from './pages/creative-person/creative-person.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ChooseComponent } from './pages/why-choose-us/choose/choose.component';
-import { AchievementComponent } from './pages/services/achievement/achievement.component';
-import { LinkComponent } from './pages/home/ptoduct/link/link.component';
 
 
 let routes:Route[]=[
   {
     path: '',
-    component:LayoutComponent,
+    // component:LayoutComponent,
+    loadComponent:()=>import('./layout/layout.component').then(m=>m.LayoutComponent),
     children:[
       {
         path: '',
@@ -35,44 +18,52 @@ let routes:Route[]=[
       },
       {
         path:'home',
-        component: HomeComponent,
+        // component: HomeComponent,
+        loadComponent:()=>import('./pages/home/home.component').then(m=>m.HomeComponent),
         title: 'Home'
       },
       {
         path:'about-us',
-        component: AboutUsComponent,
+        // component: AboutUsComponent,
+        loadComponent:()=>import('./pages/about-us/about-us.component').then(m=>m.AboutUsComponent),
         title: 'About Us'
       },
       {
         path:'services',
-        component: ServicesComponent,
+        // component: ServicesComponent,
+        loadComponent:()=>import('./pages/services/services.component').then(m=>m.ServicesComponent),
         title: 'Services'
       },
       {
         path:'out-teams',
-        component: OurTeamsComponent,
+        // component: OurTeamsComponent,
+        loadComponent:()=>import('./pages/our-teams/our-teams.component').then(m=>m.OurTeamsComponent),
         title: 'Our Teams'
       },
       {
         path:'contact-us',
-        component: ContactUsComponent,
+        // component: ContactUsComponent,
+        loadComponent:()=>import('./pages/contact-us/contact-us.component').then(m=>m.ContactUsComponent),
         title: 'Contact Us'
       },
       {
         path:'portofolios',
-        component: PortofoliosComponent,
+        // component: PortofoliosComponent,
+        loadComponent:()=>import('./pages/portofolios/portofolios.component').then(m=>m.PortofoliosComponent),
         title: 'Portofolios Component'
       },
       {
         path:'portofolios-details',
-        component: PortofoliosDetailsComponent,
+        // component: PortofoliosDetailsComponent,
+        loadComponent:()=>import('./pages/portofolios-details/portofolios-details.component').then(m=>m.PortofoliosDetailsComponent),
         title: 'Portofolios Details'
       },
     ]
   },
   {
     path:'**',
-    component: NotPageComponent,
+    // component: NotPageComponent,
+    loadComponent:()=>import('./pages/not-page/not-page.component').then(m=>m.NotPageComponent),
     title: 'ERRORE'
   }
 ]

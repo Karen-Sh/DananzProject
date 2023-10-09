@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Choose } from 'src/app/models/choose';
 import { ChooseComponent } from './choose/choose.component';
 import { NgFor, NgForOf } from '@angular/common';
+import { GataService } from 'src/app/service/gata.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-why-choose-us',
@@ -10,31 +12,15 @@ import { NgFor, NgForOf } from '@angular/common';
   standalone: true,
   imports:[ChooseComponent,NgForOf]
 })
-export class WhyChooseUsComponent {
-    choose:Choose[] = [
-      {
-        id:1,
-        title:'High Quality',
-        text: `Customize your interior design into 
-               a dream place with the best designers 
-               and quality furniture. We try our best 
-               to fulfill your expectations.`
-      },
-      {
-        id:2,
-        title:'Professional Designer',
-        text: `Customize your interior design into 
-               a dream place with the best designers 
-               and quality furniture. We try our best 
-               to fulfill your expectations.`
-      },
-      {
-        id:3,
-        title:'The Best Services',
-        text: `Customize your interior design into 
-               a dream place with the best designers 
-               and quality furniture. We try our best 
-               to fulfill your expectations.`
-      }
-    ]
+export class WhyChooseUsComponent implements OnInit {
+    choose:Choose[] = []
+    constructor(private service: GataService){
+
+    }
+  ngOnInit(): void {
+    this.service.ChooseGet<Choose[]>(environment.choose.get).subscribe(data=>{
+      this.choose =data
+    })
+  }
+
 }

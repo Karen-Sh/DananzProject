@@ -1,0 +1,119 @@
+{
+    "choose":[
+        {
+          "id":1,
+          "title": "High Quality",
+          "text":  "Customize your interior design into a dream place with the best designers and quality furniture. We try our best  to fulfill your expectations."
+        },
+        {
+          "id":2,
+          "title": "Professional Designer",
+          "text":  "Customize your interior design into a dream place with the best designe and quality furniture. We try our best to fulfill your expectations."
+        },
+        {
+          "id":3,
+          "title": "The Best Services",
+          "text":  "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
+        }
+    ],
+    "achievement":[
+        {
+          "id":1,
+          "img":   "assets/img/unsplash_mx4mSkK9zeo.png",
+          "title": "Interior design",
+          "text":  "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
+        },
+        {
+          "id":2,
+          "img":   "assets/img/unsplash_7okkFhxrxNw.png",
+          "title": "Consultant",
+          "text":  "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
+        },
+        {
+          "id":3,
+          "img":   "assets/img/unsplash_wD1LRb9OeEo.png",
+          "title": "construction consultant",
+          "text":  "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
+        }
+    ],
+    "link":[
+        {
+          "id":1,
+          "text1" : "01",
+          "text2": "Vintage",
+          "img":   "assets/img/arrow-right (3).png",
+          "text3": "the use of simple and limited elements to get the best effector impression."
+        },
+        {
+          "id":2,
+          "text1": "02",
+          "text2": "Minimalist",
+          "img":   "assets/img/arrow-right (3).png",
+          "text3": "the use of simple and limited elements to get the best effector impression."
+        },
+        {
+          "id":3,
+          "text1": "03",
+          "text2": "Modern",
+          "img":   "assets/img/arrow-right (3).png",
+          "text3": "the use of simple and limited elements to get the best effector impression."
+        },
+        {
+          "id":4,
+          "text1": "04",
+          "text2": "transitional",
+          "img":   "assets/img/arrow-right (3).png",
+          "text3": "the use of simple and limited elements to get the best effector impression."
+        }
+    ],    
+    "person":[
+        {
+          "id": 1,
+          "img":   "assets/img/unsplash_YmQ8TrsieE4.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 2,
+          "img":   "assets/img/unsplash_WyDr1KFS23Y.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 3,
+          "img":   "assets/img/unsplash_W7b3eDUb_2I.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 4,
+          "img":   "assets/img/unsplash_chn-__w4I3M.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 5,
+          "img":   "assets/img/unsplash_IF9TK5Uy-KI.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 6,
+          "img":   "assets/img/unsplash_5n3JP9WAJTs.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 7,
+          "img":   "assets/img/unsplash_Zz5LQe-VSMY.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        },
+        {
+          "id": 8,
+          "img":   "assets/img/unsplash_GRyMXAQdtp8.png",
+          "title": "Shoo Phar Dhie",
+          "text":  "CEO"
+        }
+      ]
+}

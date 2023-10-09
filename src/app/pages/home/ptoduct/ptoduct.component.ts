@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LinkComponent } from './link/link.component';
 import { Links } from 'src/app/models/links';
 import { NgForOf } from '@angular/common';
+import { GataService } from 'src/app/service/gata.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-ptoduct',
@@ -11,43 +13,12 @@ import { NgForOf } from '@angular/common';
   standalone: true,
   imports:[RouterModule,LinkComponent,NgForOf]
 })
-export class PtoductComponent {
-  link:Links[]=[
-    {
-      id:1,
-      text1:'01',
-      text2: 'Vintage',
-      img: 'assets/img/arrow-right (3).png',
-      text3: `the use of simple and limited 
-              elements to get the best effect
-              or impression.`
-    },
-    {
-      id:2,
-      text1:'02',
-      text2: 'Minimalist',
-      img: 'assets/img/arrow-right (3).png',
-      text3: `the use of simple and limited 
-              elements to get the best effect
-              or impression.`
-    },
-    {
-      id:3,
-      text1:'03',
-      text2: 'Modern',
-      img: 'assets/img/arrow-right (3).png',
-      text3: `the use of simple and limited 
-              elements to get the best effect
-              or impression.`
-    },
-    {
-      id:4,
-      text1:'04',
-      text2: 'transitional',
-      img: 'assets/img/arrow-right (3).png',
-      text3: `the use of simple and limited 
-              elements to get the best effect
-              or impression.`
-    }
-  ]
+export class PtoductComponent implements OnInit {
+  link:Links[]=[]
+  constructor (private service:GataService){}
+  ngOnInit(): void {
+    this.service.LinkGet<Links[]>(environment.link.get).subscribe(data=>{
+        this.link =data;
+    })
+  }
 }
